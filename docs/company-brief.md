@@ -62,6 +62,14 @@ This model has structural implications worth being explicit about:
 - Serious games and simulations
 - LMS support and integration
 
+**Instructor-led training and train-the-trainer**
+- Face-to-face training design (modules built for in-person delivery, not only digital)
+- Train-the-trainer programs (handoff to client instructors with structured materials and coaching support)
+- Trainer prep sessions (one-on-one or small-group prep before training rollout)
+- Coaching and feedback for trainers (post-delivery support so the training improves session-over-session)
+
+The agency carries deep face-to-face training experience from Mike's six years of in-person training delivery earlier in his career. This is a meaningful differentiator from competitors that deliver eLearning only and cannot extend into in-person or blended delivery. For public site copy, this surfaces as an agency capability rather than a personal credential ("ID Atlas designs in-person training and train-the-trainer programs" rather than "Mike has six years of teaching experience").
+
 ### Emerging service motions
 - **Paid webinars and external training.** Mike is starting to monetize his expertise as a speaker. First paid engagement landed with an authoring tool company that wants help with marketing and visibility.
 - **Vendor advisory.** Adjacent to the above. Mike is positioned as a credible voice in the authoring tool space thanks to Field Notes, especially the November 2025 benchmark series.
