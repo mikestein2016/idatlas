@@ -7,19 +7,20 @@ const nav = [
   { label: 'Explore', href: `${base}/explore` },
 ];
 ---
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+<header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-800">
   <div class="mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
-    <a href={`${base}/`} class="flex items-center gap-2 font-semibold text-lg text-slate-900">
-      <span class="inline-flex w-7 h-7 rounded-full bg-slate-900 text-white text-xs items-center justify-center">ID</span>
-      ID Atlas
+    <a href={`${base}/`} class="flex items-center gap-3 font-semibold text-lg text-white">
+      <img src={`${base}/brand/id-atlas-mark.png`} alt="ID Atlas" class="w-9 h-9 rounded-full" />
+      <span>ID Atlas</span>
     </a>
-    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-700">
+    <nav class="hidden md:flex items-center gap-8 text-sm text-slate-200">
       {nav.map(item => (
-        <a href={item.href} class="hover:text-slate-900">{item.label}</a>
+        <a href={item.href} class="hover:text-white">{item.label}</a>
       ))}
     </nav>
-    <a href={`${base}/#contact`} class="inline-flex items-center gap-2 bg-slate-900 text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-slate-700 transition">
-      Book a discovery call
+    <a href={`${base}/#contact`} class="inline-flex items-center gap-2 bg-white text-slate-900 rounded-full px-5 py-2 text-sm font-semibold hover:bg-slate-100 transition">
+      Get in touch
+      <span aria-hidden="true">→</span>
     </a>
   </div>
 </header>
