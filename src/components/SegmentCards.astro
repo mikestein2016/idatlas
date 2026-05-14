@@ -2,26 +2,46 @@
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <section class="bg-white">
-  <div class="mx-auto max-w-7xl px-6 py-20">
+  <div class="mx-auto max-w-7xl px-6 pt-0 pb-20">
     <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Who we work with</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-slate-50 rounded-2xl p-8">
-        <h3 class="text-2xl font-bold mb-4">For universities and academic departments</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Course conversion, faculty development, accessibility compliance. We've redesigned face-to-face courses into online and hybrid formats for universities including UMD, Texas State, Johns Hopkins, and Illinois Institute of Technology. We work alongside faculty as partners, not contractors. We build digital learning that respects pedagogy and meets Quality Matters and Section 508 standards.
-        </p>
-        <a href={`${base}/higher-ed`} class="inline-flex items-center text-slate-900 font-semibold hover:underline">
-          Higher education services →
-        </a>
+    <div class="flex flex-col gap-8">
+      <div class="bg-slate-50 rounded-2xl overflow-hidden md:flex md:max-h-64">
+        <div class="md:w-2/5 md:flex-shrink-0">
+          <img
+            src={`${base}/images/higher-ed-workshop.webp`}
+            alt=""
+            aria-hidden="true"
+            class="w-full h-56 md:h-full object-cover object-top"
+          />
+        </div>
+        <div class="p-8 md:flex-1">
+          <h3 class="text-2xl md:text-3xl font-bold mb-4">For universities and academic departments</h3>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Course conversion, faculty development, accessibility compliance. We redesign face-to-face courses into online and hybrid formats, working alongside faculty as partners, not contractors. Pedagogy-respecting design that meets Quality Matters and Section 508 standards.
+          </p>
+          <a href={`${base}/higher-ed`} class="inline-flex items-center text-slate-900 font-semibold hover:underline">
+            Higher education services →
+          </a>
+        </div>
       </div>
-      <div class="bg-slate-50 rounded-2xl p-8">
-        <h3 class="text-2xl font-bold mb-4">For mission-driven nonprofits</h3>
-        <p class="text-slate-700 leading-relaxed mb-6">
-          Custom training that fits a nonprofit's budget, mission, and constraints. We've built compliance training, scalable on-demand programs, and accessible learning for organizations like ISRG, HIAS, and LIRS. We work with you to identify what training your team actually needs, even when you're not sure yet, and then we build it.
-        </p>
-        <a href={`${base}/nonprofits`} class="inline-flex items-center text-slate-900 font-semibold hover:underline">
-          Nonprofit services →
-        </a>
+      <div class="bg-slate-50 rounded-2xl overflow-hidden md:flex md:max-h-64">
+        <div class="md:w-2/5 md:flex-shrink-0">
+          <img
+            src={`${base}/images/nonprofit-advocate.webp`}
+            alt=""
+            aria-hidden="true"
+            class="w-full h-56 md:h-full object-cover object-top"
+          />
+        </div>
+        <div class="p-8 md:flex-1">
+          <h3 class="text-2xl md:text-3xl font-bold mb-4">For mission-driven nonprofits</h3>
+          <p class="text-slate-700 leading-relaxed mb-6">
+            Custom training that fits a nonprofit's budget, mission, and constraints. We build compliance training, scalable on-demand programs, and accessible learning. We work with you to identify what your team actually needs, even when you're not sure yet, and then we build it.
+          </p>
+          <a href={`${base}/nonprofits`} class="inline-flex items-center text-slate-900 font-semibold hover:underline">
+            Nonprofit services →
+          </a>
+        </div>
       </div>
     </div>
   </div>
