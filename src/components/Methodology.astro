@@ -1,0 +1,26 @@
+---
+const steps = [
+  { word: 'Define', body: 'Start with the problem, not the solution. We ask diagnostic questions before recommending anything. Triangulate stakeholder input, organizational constraints, and learner needs.' },
+  { word: 'Design', body: 'Map the learning paths, the activities, and the assessments. Get alignment from client and SMEs before any production starts.' },
+  { word: 'Develop', body: 'Build the training. Maintain accessibility, brand, and pedagogical integrity throughout. Test against the design decisions.' },
+  { word: 'Drive', body: 'Deploy and pilot. Train trainers if applicable. Help client teams get learners using it.' },
+  { word: 'Determine', body: 'Measure what happened. Report back honestly. Adjust the training, rollout, or strategy based on what the data shows.' },
+];
+---
+<section id="methodology" class="bg-white">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">How we work: the 5D Spiral</h2>
+    <p class="text-slate-600 max-w-2xl mx-auto text-center mb-12 leading-relaxed">
+      A structured, iterative methodology adapted from ADDIE. The 5D Spiral treats analysis and evaluation as continuous activities rather than discrete phases, and it shapes every engagement we take on.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+      {steps.map(step => (
+        <div class="bg-slate-50 rounded-xl p-5">
+          <div class="text-4xl font-bold text-slate-300 mb-2">D</div>
+          <h3 class="text-lg font-semibold mb-2">{step.word}</h3>
+          <p class="text-sm text-slate-700 leading-relaxed">{step.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

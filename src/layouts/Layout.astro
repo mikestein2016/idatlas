@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const {
+  title = "Custom Training for Nonprofits and Higher Education | ID Atlas",
+  description = "ID Atlas designs and builds e-learning, microlearning, serious games, and accessibility-compliant training for nonprofits, universities, and mission-led startups. Trusted by ISRG, Johns Hopkins, UMD, HIAS, Texas State, and more.",
+  ogTitle = "Training built for mission-driven work",
+  ogDescription = "Custom e-learning, microlearning, and serious games for nonprofits, universities, and mission-led startups.",
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ID Atlas",
+  "description": "Custom training for nonprofits, higher education, and mission-led startups.",
+  "url": "https://idatlas.org",
+  "serviceType": [
+    "Instructional Design",
+    "E-Learning Development",
+    "Microlearning",
+    "Serious Games",
+    "Accessibility Audits",
+    "Train-the-Trainer"
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  </head>
+  <body class="font-sans text-slate-900 bg-white antialiased">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

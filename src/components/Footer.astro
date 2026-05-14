@@ -1,0 +1,44 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<footer class="bg-slate-900 text-slate-200 mt-0">
+  <div class="mx-auto max-w-7xl px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div>
+      <div class="flex items-center gap-2 font-semibold text-white text-lg mb-3">
+        <span class="inline-flex w-7 h-7 rounded-full bg-white text-slate-900 text-xs items-center justify-center">ID</span>
+        ID Atlas
+      </div>
+      <p class="text-sm text-slate-400 leading-relaxed">Custom training for mission-driven teams.</p>
+    </div>
+    <div>
+      <h3 class="text-sm font-semibold text-white mb-4">Services</h3>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href={`${base}/higher-ed`} class="hover:text-white">Higher Education</a></li>
+        <li><a href={`${base}/nonprofits`} class="hover:text-white">Nonprofits</a></li>
+        <li><a href={`${base}/#services`} class="hover:text-white">All Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-sm font-semibold text-white mb-4">Resources</h3>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href={`${base}/blog`} class="hover:text-white">Field Notes</a></li>
+        <li><a href={`${base}/id-case-files`} class="hover:text-white">ID Case Files</a></li>
+        <li><a href={`${base}/explore`} class="hover:text-white">Career Discovery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-sm font-semibold text-white mb-4">Connect</h3>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="mailto:mike@idatlas.org" class="hover:text-white">mike@idatlas.org</a></li>
+        <li><a href="https://www.youtube.com/@mikesteindesign" class="hover:text-white">YouTube</a></li>
+        <li><a href="https://www.reddit.com/user/MikeSteinDesign/" class="hover:text-white">Reddit</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-slate-800">
+    <div class="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row gap-3 justify-between text-xs text-slate-500">
+      <span>© 2026 ID Atlas. All rights reserved.</span>
+      <span>Custom training for mission-driven teams.</span>
+    </div>
+  </div>
+</footer>

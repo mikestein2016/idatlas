@@ -1,0 +1,26 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<section class="bg-slate-900 text-white">
+  <div class="mx-auto max-w-7xl px-6 py-24 md:py-32">
+    <div class="max-w-3xl">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight tracking-tight">
+        Training built for mission-driven work.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-300 leading-relaxed">
+        Custom e-learning, microlearning, and serious games for nonprofits, universities, and mission-led startups. We map what your team actually needs to learn, then design and build it within your budget.
+      </p>
+      <p class="mt-4 text-sm text-slate-400">
+        Trusted by ISRG, Johns Hopkins, UMD, HIAS, Texas State, and more.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href={`${base}/#contact`} class="inline-flex items-center gap-2 bg-white text-slate-900 rounded-full px-6 py-3 text-sm font-semibold hover:bg-slate-100 transition">
+          Book a discovery call
+        </a>
+        <a href="#recent-work" class="inline-flex items-center gap-2 border border-slate-600 text-slate-200 rounded-full px-6 py-3 text-sm font-semibold hover:bg-slate-800 transition">
+          See our work
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

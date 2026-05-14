@@ -1,0 +1,41 @@
+---
+const services = [
+  {
+    title: 'Course Development',
+    body: 'End-to-end course design for online, hybrid, and in-person delivery. From discovery and learning-objective definition through final QA and LMS deployment. Aligned to Quality Matters where applicable.',
+  },
+  {
+    title: 'Serious Games and Simulations',
+    body: 'Game-based learning that turns dry content into something people actually want to engage with. Examples include hospitality management, English pronunciation, demographic transition modeling, and immunity concept gameplay.',
+  },
+  {
+    title: 'Microlearning',
+    body: 'Short, focused training modules built for the flow of work. Effective for compliance, onboarding, and just-in-time skill refreshers. Designed to deploy quickly and refine continuously.',
+  },
+  {
+    title: 'Instructor-Led Training and Train-the-Trainer',
+    body: 'In-person training design, train-the-trainer programs with structured materials, trainer prep, and post-delivery coaching. For teams that need their instructors to teach effectively.',
+  },
+  {
+    title: 'Accessibility Audits and Remediation',
+    body: 'WCAG AA and Section 508 audits with prioritized remediation plans and VPAT documentation. We build accessibility into new courses from the start and remediate existing ones when needed.',
+  },
+  {
+    title: 'ID Coaching',
+    body: 'One-on-one career coaching, resume and portfolio reviews, and software training for people transitioning into instructional design. Free 15-minute consultation available.',
+  },
+];
+---
+<section id="services" class="bg-slate-50">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">What we build</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {services.map(service => (
+        <div class="bg-white rounded-xl p-6 border border-slate-200">
+          <h3 class="text-xl font-semibold mb-3">{service.title}</h3>
+          <p class="text-slate-700 leading-relaxed text-sm">{service.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

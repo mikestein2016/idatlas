@@ -1,0 +1,54 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const higherEd = [
+  { name: 'umd', label: 'University of Maryland College Park, Higher Education Partner of ID Atlas' },
+  { name: 'umgc', label: 'University of Maryland Global Campus, Higher Education Partner of ID Atlas' },
+  { name: 'texas-state', label: 'Texas State University, Higher Education Partner of ID Atlas' },
+  { name: 'jhu', label: 'Johns Hopkins University, Higher Education Partner of ID Atlas' },
+  { name: 'illinois-tech', label: 'Illinois Institute of Technology, Higher Education Partner of ID Atlas' },
+  { name: 'hcc', label: 'Howard Community College, Higher Education Partner of ID Atlas' },
+];
+
+const nonprofit = [
+  { name: 'isrg', label: 'Internet Security Research Group, Non-Profit Partner of ID Atlas' },
+  { name: 'hias', label: 'Hebrew Immigrant Aid Society, Non-Profit Partner of ID Atlas' },
+  { name: 'lirs', label: 'Lutheran Immigration and Refugee Service, Non-Profit Partner of ID Atlas' },
+];
+
+const smallBiz = [
+  { name: 'gwt', label: 'Grow With Trees, Small Business Partner of ID Atlas' },
+  { name: 'qmedix', label: 'Qmedix, Small Business Partner of ID Atlas' },
+];
+---
+<section class="bg-slate-50 border-y border-slate-100">
+  <div class="mx-auto max-w-7xl px-6 py-16">
+    <p class="text-sm uppercase tracking-widest text-slate-500 mb-10 text-center">Past partners and clients</p>
+    <div class="space-y-12">
+      <div>
+        <h3 class="text-xs uppercase tracking-wider text-slate-400 mb-6 text-center">Higher Education</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
+          {higherEd.map(logo => (
+            <img src={`${base}/logos/${logo.name}.png`} alt={logo.label} class="max-h-12 w-auto mx-auto opacity-70 hover:opacity-100 transition" />
+          ))}
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xs uppercase tracking-wider text-slate-400 mb-6 text-center">Non-Profit</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 items-center max-w-2xl mx-auto">
+          {nonprofit.map(logo => (
+            <img src={`${base}/logos/${logo.name}.png`} alt={logo.label} class="max-h-12 w-auto mx-auto opacity-70 hover:opacity-100 transition" />
+          ))}
+        </div>
+      </div>
+      <div>
+        <h3 class="text-xs uppercase tracking-wider text-slate-400 mb-6 text-center">Small Business</h3>
+        <div class="grid grid-cols-2 gap-6 items-center max-w-lg mx-auto">
+          {smallBiz.map(logo => (
+            <img src={`${base}/logos/${logo.name}.png`} alt={logo.label} class="max-h-12 w-auto mx-auto opacity-70 hover:opacity-100 transition" />
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

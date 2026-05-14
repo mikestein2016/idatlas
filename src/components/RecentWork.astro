@@ -1,0 +1,41 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const work = [
+  {
+    title: 'The Last Resort',
+    context: 'Hospitality management simulator for Texas State University',
+    body: 'A gamified hotel management simulator built in Construct 3 with character art from Midjourney and voices synthesized in Eleven Labs. Students manage pricing, staffing, and amenities across 24 simulated months.',
+    cta: 'Read the case study',
+    href: `${base}/blog/hotel-management-simulator`,
+  },
+  {
+    title: 'ISRG Cybersecurity Training',
+    context: 'From three-hour live training to scalable on-demand modules',
+    body: "Converted a recurring three-hour cybersecurity training over Google Meet into a scalable, LMS-tracked on-demand module for ISRG, the nonprofit behind Let's Encrypt. Consolidated input from multiple SMEs into a single source-of-truth document along the way.",
+    cta: 'Read the case study',
+    href: `${base}/blog`,
+  },
+  {
+    title: 'Accessible Drag-and-Drop for Storyline',
+    context: 'Open-source template, fully WCAG-compliant',
+    body: 'A WCAG-compliant drag-and-drop interaction template for Articulate Storyline, accommodating both keyboard and mouse-based learners. Released free for the ID community.',
+    cta: 'Download the template',
+    href: `${base}/blog/accessible-drag-and-drop`,
+  },
+];
+---
+<section id="recent-work" class="bg-slate-50">
+  <div class="mx-auto max-w-7xl px-6 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Recent work</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {work.map(item => (
+        <article class="bg-white rounded-xl p-6 border border-slate-200 flex flex-col">
+          <p class="text-xs uppercase tracking-wider text-slate-500 mb-3">{item.context}</p>
+          <h3 class="text-xl font-semibold mb-4">{item.title}</h3>
+          <p class="text-slate-700 text-sm leading-relaxed mb-6 flex-grow">{item.body}</p>
+          <a href={item.href} class="text-slate-900 font-semibold text-sm hover:underline">{item.cta} →</a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
