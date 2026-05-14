@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects
+# MSD → idatlas.org consolidation redirects go here once URL map is finalized.
+# Format: source destination status
+# Examples:
+# /old-path /new-path 301
+# https://mikesteindesign.org/* https://idatlas.org/portfolio/:splat 301
