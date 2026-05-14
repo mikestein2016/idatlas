@@ -7,8 +7,8 @@ const work = [
     body: 'A gamified hotel management simulator built in Construct 3 with character art from Midjourney and voices synthesized in Eleven Labs. Students manage pricing, staffing, and amenities across 24 simulated months.',
     cta: 'Read the case study',
     href: `${base}/blog/hotel-management-simulator`,
-    image: 'image-aws.png',
-    alt: 'The Last Resort hotel management simulator interface',
+    image: 'texas-state-last-resort.webp',
+    alt: 'The Last Resort hospitality management simulator interface showing in-game hotel decisions for Texas State University',
   },
   {
     title: 'ISRG Cybersecurity Training',
@@ -16,8 +16,8 @@ const work = [
     body: "Converted a recurring three-hour cybersecurity training over Google Meet into a scalable, LMS-tracked on-demand module for ISRG, the nonprofit behind Let's Encrypt. Consolidated input from multiple SMEs into a single source-of-truth document along the way.",
     cta: 'Read the case study',
     href: `${base}/blog`,
-    image: 'image-bfz.png',
-    alt: 'Cybersecurity training module screen',
+    image: 'isrg-cybersecurity-training.webp',
+    alt: 'ISRG cybersecurity training module for nonprofit on-demand compliance training',
   },
   {
     title: 'Accessible Drag-and-Drop for Storyline',
@@ -25,8 +25,8 @@ const work = [
     body: 'A WCAG-compliant drag-and-drop interaction template for Articulate Storyline, accommodating both keyboard and mouse-based learners. Released free for the ID community.',
     cta: 'Download the template',
     href: `${base}/blog/accessible-drag-and-drop`,
-    image: 'image-yjp.png',
-    alt: 'Accessible drag-and-drop interaction template preview',
+    image: 'accessible-drag-drop-template.webp',
+    alt: 'WCAG-compliant drag-and-drop accessibility template for Articulate Storyline',
   },
 ];
 ---
@@ -36,7 +36,7 @@ const work = [
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       {work.map(item => (
         <article class="bg-white rounded-xl border border-slate-200 flex flex-col overflow-hidden">
-          <img src={`${base}/images/${item.image}`} alt={item.alt} class="w-full h-48 object-cover" />
+          <img src={`${base}/images/${item.image}`} alt={item.alt} class="w-full h-48 object-cover" loading="lazy" />
           <div class="p-6 flex flex-col flex-grow">
             <p class="text-xs uppercase tracking-wider text-slate-500 mb-3">{item.context}</p>
             <h3 class="text-xl font-semibold mb-4">{item.title}</h3>
